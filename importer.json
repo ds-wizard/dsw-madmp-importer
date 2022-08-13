@@ -1,0 +1,25 @@
+{
+  "id": "dsw:madmp-importer:0.1.0",
+  "importerId": "madmp-importer",
+  "organizationId": "dsw",
+  "version": "0.1.0",
+  "name": "RDA maDMP Importer",
+  "description": "Import from maDMP in JSON according to the DMP Common Standard",
+  "license": "Apache-2.0",
+  "metamodelVersion": 1,
+  "allowedPackages": [
+    {
+      "orgId": "dsw",
+      "kmId": "root",
+      "minVersion": "2.4.0",
+      "maxVersion": null
+    },
+    {
+      "orgId": "dsw",
+      "kmId": "lifesciences",
+      "minVersion": "2.4.0",
+      "maxVersion": null
+    }
+  ],
+  "url": "..."
+}
