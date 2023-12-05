@@ -1,6 +1,4 @@
-
-
-import DSWImporter from '@ds-wizard/importer-sdk'
+import dsw from '@ds-wizard/integration-sdk'
 
 const CONTRIBUTOR_ROLE_MAP = {
     'contactperson': '2c6ee59d-4dc9-4dcb-ac13-d969c317a117',
@@ -299,7 +297,7 @@ function importMaDMP(importer, madmp) {
 }
 
 function prepareImporter() {
-    const importer = new DSWImporter()
+    const importer = new dsw.Importer()
 
     importer
         .init()
