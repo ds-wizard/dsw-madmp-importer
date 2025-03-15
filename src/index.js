@@ -35,7 +35,7 @@ function getRoleUuid(role) {
 
 function importFunding(importer, prefix, funding) {
     const name = funding['funder_name']
-    const grant = funding['grant_id']['identifier']
+    const grant = funding['grant_id'] ? funding['grant_id']['identifier'] : undefined
     const status = funding['funding_status']
     if ([name, grant, status].every(x => x === undefined)) {
         return
@@ -320,18 +320,21 @@ function prepareImporter() {
                         data = JSON.parse(event.target.result)
                     } catch (error) {
                         showError('Failed to parse JSON file.')
+                        console.log(error)
                         return
                     }
                     try {
                         importMaDMP(importer, data)
                     } catch (error) {
                         showError('Failed to parse maDMP in JSON.')
+                        console.log(error)
                         return
                     }
                     try {
                         importer.send()
                     } catch (error) {
                         showError('Failed to send data back to the Wizard.')
+                        console.log(error)
                     }
                 })
                 reader.readAsText(file)

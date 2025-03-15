@@ -4,6 +4,14 @@
 
 ## Changelog
 
+### 0.2.1
+
+- Fix importing funding without grant ID
+
+### 0.2.0
+
+- Use of new DSW Integration SDK
+
 ### 0.1.0
 
 Initial testing version of the importer.
