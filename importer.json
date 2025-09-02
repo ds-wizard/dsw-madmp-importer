@@ -2,7 +2,7 @@
   "id": "dsw:madmp-importer:0.2.1",
   "importerId": "madmp-importer",
   "organizationId": "dsw",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "name": "RDA maDMP Importer",
   "description": "Import from maDMP in JSON according to the DMP Common Standard",
   "license": "Apache-2.0",
