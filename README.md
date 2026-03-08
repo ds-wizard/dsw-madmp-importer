@@ -2,6 +2,9 @@
 
 *Import from maDMP in JSON according to the [RDA DMP Common Standard](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard)*
 
+> [!CAUTION]
+> Project Importers has been **deprecated** starting DSW v4.28 and you should use [madmp-importer-plugin](https://github.com/ds-wizard/madmp-importer-plugin) instead.
+
 ## Changelog
 
 ### 0.3.0
